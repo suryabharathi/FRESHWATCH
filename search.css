@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+.header { 
+  background-color:#212121; height: 50px}
+
+
+
+.floatmain{
+  float: left;
+  margin:auto;
+}
+.scontainer {
+  position: absolute;
+  margin: auto;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .scontainer {
+  position: absolute;
+ margin-top:40px;
+  width: 300px;
+  height: 100px;
+} }
+
+
+.scontainer .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: #212121;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 450px){
+.scontainer .search {
+  position: absolute;
+  margin:auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: #212121;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+}
+.scontainer .search:hover {
+  cursor: pointer;
+}
+.scontainer .search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 22px;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+.scontainer .search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all .5s;
+}
+.scontainer input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  color: #000000;
+  text-shadow: 0 0 15px #000000;
+  padding: 0 80px 0 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px 0 00b2cc, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.scontainer input:hover {
+  cursor: pointer;
+}
+.scontainer input:focus {
+  width: 300px;
+  opacity: 1;
+  cursor: text;
+}
+.scontainer input:focus ~ .search {
+  right: -250px;
+  background: #212121;
+  z-index: 6;
+}
+.scontainer input:focus ~ .search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 22px;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+.scontainer input:focus ~ .search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all .5s;
+}
+.scontainer input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+
+
+//maincard
+
+
+.main-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%
+  
+}
+
+.main-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.main-img{
+  
+  width: 100%;
+  min-height:500px;
+}
+
+.main-img:hover {
+    opacity: 0.1;
+    text-align: center;
+
+}
+.main-img-text:hover {
+    opacity: 1;
+    text-align: center;
+    
+}
+
+
+
+.main-column{
+  float: left;
+
+}
+
+@media screen and (max-width: 800px) {
+  .mainfloat {
+ margin-top: 20%; 
+
+ float: left;
+} }
+
+
+
+
+
+
+
+
+//card 
+
+.container {
+  
+  background-color:#000000;
+  float: left;
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+  align-content: center;
+  background-color:transparent;
+  float: left;
+} }
+
+
+
+.cellphone-container {
+  width: 375px;
+  height: 650px;
+  background-color: #FFFFFF;
+  margin: 60px auto 0 auto;
+  box-shadow: 5px 5px 115px -14px black;
+  border-radius: 4px;
+}
+
+.menu {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  z-index: 999;
+}
+.menu i {
+  font-size: 40px;
+  color: #00b2cc;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+
+
+.text-movie-cont {
+  padding: 0px 12px;
+  text-align: justify;
+  background-color:#ffffff;
+}
+
+.action-btn {
+  text-align: right;
+}
+.action-btn i {
+  color: #00b2cc;
+  font-size: 28px;
+  text-align: right;
+}
+
+.watch-btn {
+  display: block;
+  border: 1px solid #00b2cc;
+  border-radius: 5px;
+  padding: 4px;
+  width: 140px;
+}
+.watch-btn h3 i {
+  font-size: 14px;
+  margin-right: 2px;
+  position: relative;
+  float: left;
+  line-height: 1;
+}
+
+
+
