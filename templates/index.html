@@ -1,0 +1,133 @@
+<html lang="en"   >
+ <head>
+  <title>FreshWatch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript">
+    function onclicking(id)
+    {
+     
+window.location.href = "http://127.0.0.1:5000/detail/"+id;
+    };
+    function search()
+    {
+      name=document.getElementById('search').value;
+      if(name.length==0)
+      {
+        alert("Please Enter Title");
+        
+      }
+      else
+    window.location.href = "http://127.0.0.1:5000/search/"+name;
+    };
+  
+  </script>
+</head>
+
+<body style="background-color: #F5F5F5">
+  <header class="header " display="inline-block;"  >
+    <img height="50px" src="{{ url_for('static',filename='styles/logo.png') }}">
+      </header>
+
+
+
+  <div align="center" style=" margin-top:3%">  
+   
+  <div class="scontainer" style="margin-top:0.1px ;margin-right:5%" >
+  <input    type="text" id="search"    placeholder="CLICK ON ICON to Search..." >
+  <button onclick="search()" id="searchbutton" class="search"></button>
+
+</div>  
+  
+
+  </div>
+
+
+<div class="floatmain" style="margin-left: 3% ;">
+<h1 style="font-size: 20px; font-style: bold;margin-bottom: 15px"> HIGH RATED</h1>
+
+<div class=" zoom main-card " id="chernobyl" onclick="onclicking(this.id)" style=" float: left; ;border: 2px; border-radius:15px;margin-left:10px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px;"  src="https://m.media-amazon.com/images/M/MV5BNTEyYmIzMDUtNWMwNC00Y2Q1LWIyZTgtMGY1YzUxOTAwYTAwXkEyXkFqcGdeQXVyMjIyMTc0ODQ@._V1_SX300.jpg">
+    </div>
+
+
+<div class=" zoom main-card " id="when they see us" onclick="onclicking(this.id)" style=" float: left; margin-left:10px ;border: 2px; border-radius:15px ;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px;"  src="https://m.media-amazon.com/images/M/MV5BZmJjM2YzOWEtOTYxYi00YjhkLTliMzgtMTA2MTc0NDQ1MDM4XkEyXkFqcGdeQXVyODY5OTk4MA@@._V1_SX300.jpg">
+    </div>
+  
+
+  
+
+<div class=" zoom main-card " id="joker" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px; border: 2px; border-radius:15px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px"   src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg">
+    </div>
+
+
+<div class=" zoom main-card " id="for sama" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px"  src="https://m.media-amazon.com/images/M/MV5BYzE2NWE0OWEtMjk5NS00OWYwLWEwNzQtMGFhZTIzYTgxZjI0XkEyXkFqcGdeQXVyNDY2NDMxNDY@._V1_SX300.jpg">
+    </div>
+
+<div class=" zoom main-card " id="parasite" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px"  src="https://m.media-amazon.com/images/M/MV5BOWVmODY4MjYtZGViYS00MzJjLWI3NmItMGFmMDRkMzI1OTU3XkEyXkFqcGdeQXVyNTQ0NTUxOTA@._V1_SX300.jpg">
+    </div>
+<div class=" zoom main-card " id="avengers endgame" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px"   src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg">
+    </div>
+<div class=" zoom main-card " id="Once Upon a Time In Hollywood" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px"  src="https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg">
+    </div>
+ 
+ 
+    
+
+   
+</div>
+
+
+
+
+
+
+
+<div class="floatmain" style="margin-left: 3% ; margin-top: 30px">
+<h1 style="font-size: 20px; margin-bottom: 15px"> MOST POPULAR</h1>
+
+<div class=" zoom main-card " id="Avengers: Endgame" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;">
+    <img  class="main-picture" id="main-pic"   src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+
+<div class=" zoom main-card " id="Toy Story 4" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;;">
+    <img  class="main-picture " id="main-pic"  src="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+  
+
+  <div class=" zoom main-card " id="Spider-Man: Far From Home" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic" style="border: 2px; border-radius:15px; ;"  src="https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+
+  <div class=" zoom main-card " id="John Wick Chapter 3" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top:10px">
+    <img  class="main-picture" id="main-pic"  src="https://m.media-amazon.com/images/M/MV5BMDg2YzI0ODctYjliMy00NTU0LTkxODYtYTNkNjQwMzVmOTcxXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+
+   <div class=" zoom main-card " id="Adventures of Aladdin" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic"  src="https://m.media-amazon.com/images/M/MV5BMDViZjgxNjMtZGExYS00MDk5LWIyNWQtMmQzNzQ1N2Y0Yzk4XkEyXkFqcGdeQXVyNTkzMzg3NDM@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+
+  <div class=" zoom main-card " id="Shazam!" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic"  src="https://m.media-amazon.com/images/M/MV5BYTE0Yjc1NzUtMjFjMC00Y2I3LTg3NGYtNGRlMGJhYThjMTJmXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SX300.jpg" style="border: 2px; border-radius:15px;" >
+    </div>
+
+  <div class=" zoom main-card " id="Joker" onclick="onclicking(this.id)" style=" float: left; margin-left: 10px ;border: 2px; border-radius:15px;margin-top: 10px">
+    <img  class="main-picture" id="main-pic"  src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg" style="border: 2px; border-radius:15px" >
+    </div>
+
+ 
+    
+   
+
+</body>
+</html>  
+            
+  

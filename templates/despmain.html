@@ -1,0 +1,58 @@
+<html lang="en"   >
+ <head>
+  <title>FreshWatch Description Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+
+   <script type="text/javascript"> function homepage(){
+  window.location.href = "http://127.0.0.1:5000/";};
+   function posterCheck()
+   {
+    let link="{{data["Poster"]}}";
+    if(link==='N/A')
+    {
+      link="{{ url_for('static',filename='styles/naimg.jpg') }}";
+    }
+    document.getElementById("Poster").src=link;
+   };
+   </script>
+</head>
+<body onload="posterCheck()" style="background-color: #f5f5f5">
+  <header class="header" style="height:50px" display="inline-block;"  >
+    <img height="50px" src="{{ url_for('static',filename='styles/logo.png') }}" onclick="homepage()">
+      </header>
+      <div style="width: 100%; " float="left">
+      <div style="width: 70%;">
+
+      <div id="Title" style="margin-top: 30px"><h1 style="color:#000000;padding-left:50px;font-size: 35px;">{{data["Title"]}}</h1></div>
+      <div id="det1">
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px; color: #6d6d6d"><span id="Runtime" style="padding-left:50px;">{{data["Runtime"]}}</span><span id="Year" style="padding-left:20px">{{data["Year"]}}</span><span id="Rated" style="padding-left:20px" >{{data["Rated"]}}</span></h2>
+      </div>
+
+      <div id="det2"   >
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px; padding-left:50px; color: #000000"><span id="Plot">{{data["Plot"]}} </span></h2>
+      </div>
+      <div style="margin-bottom: 20px;margin-top: 20px">
+      	 <img id="Poster" style="margin-left: 30%; height:250px" alt="">
+      </div>
+      <div id="det3" style="margin-left:50px ;margin-bottom:30px" >
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="DirectorT" style="color: #6d6d6d" >Director</span><span id="Director" style="padding-left:53px">{{data["Director"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000 " ><span id="ActorsT" style="color: #6d6d6d" >Starring</span><span id="Actors" style="padding-left:54px">{{data["Actors"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="GenreT" style="color: #6d6d6d">Genre</span><span id="Genre" style="padding-left:69px">{{data["Genre"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="LanguageT" style="color: #6d6d6d" >Language</span><span id="Language" style="padding-left:35px">{{data["Language"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="MetascoreT" style="color: #6d6d6d">Metascore</span><span id="Metascore" style="padding-left:32px">{{data["Metascore"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="imdbRatingT" style="color: #6d6d6d" >ImdbRating</span><span id="imdbRating" style="padding-left:20px">{{data["imdbRating"]}}</span></h2>
+      	<h2 style="font-size: 17px; font-weight: 300 ; padding-top: 10px ; color: #000000"><span id="ProductionT" style="color: #6d6d6d" >Production</span><span id="Production" style="padding-left:25px">{{data["Production"]}}</span></h2>
+              
+      </div>
+  </div>
+  
+  
+  </div>
+
+
+
+
+
+
