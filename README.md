@@ -11,11 +11,26 @@ FRESHWATCH is a web app giving information of largest collection of movie, TV sh
 
 ## TO ACCESS FRESHWATCH, Follow the following steps:
 1. Download FRESWATCH
-2. Run the __init__ file using Flask.
-   {
+2. Run the __init__ file using Flask.<br/>
+   RUNNING FLASK IN WINDOWS:  
+   > Using terminal access project folder.    
+   ` C:\Users\SURYA\Desktop>cd FRESHWATCH-master`  
+   > Set server (__intit__ file).  
+      `C:\Users\SURYA\Desktop\FRESHWATCH-master>set FLASK_APP=__init__.py `  
+   > Start the development server  
+      `C:\Users\SURYA\Desktop\FRESHWATCH-master>flask run`  
+    
+    RUNNING FLASK IN LINUX:
+    Run the following commands in terminal:  
+    > Set server (__intit__ file).  
+      ` $ export FLASK_APP=__init__.py `  
+   > Start the development server  
+      `$ flask run==__init__.py`  
+   
+   
   
-3. Use url http://127.0.0.1:5000/ to use FRESHWATCH
-That's all folks you can enyoy using FRESHWATCH NOW
+3. Open Broswer and Use url http://127.0.0.1:5000/ to use FRESHWATCH.  
+That's all folks you can enjoy using FRESHWATCH NOW
 
 ## TO USE FRESHWATCH, Follow the following steps:
    You will be directed to Home Page once you access FRESHWATCH. This contains most Highly Rated and Most Popular content. You can get all intresting contents regarding the same by clicking on them which will redirect you to Description Page.
