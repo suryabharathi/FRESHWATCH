@@ -25,7 +25,7 @@ FRESHWATCH is a web app giving information of largest collection of movie, TV sh
     > Set server (__intit__ file).  
       ` $ export FLASK_APP=__init__.py `  
    > Start the development server  
-      `$ flask run==__init__.py`  
+      `$ flask run=__init__.py`  
    
    
   
