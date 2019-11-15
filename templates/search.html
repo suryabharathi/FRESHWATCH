@@ -1,0 +1,95 @@
+<html lang="en"   >
+ <head>
+  <title>FreshWatch Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static',filename='card.js') }}"></script>
+  <script type="text/javascript">
+  var count=0;
+  let data;
+  function fly()
+  { 
+    const xhr=new XMLHttpRequest();
+    const url='http://127.0.0.1:5000/moviesearch?name={{name}}&page='+(++count);
+    xhr.responseType='json';
+    xhr.onreadystatechange=()=>
+    {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+       data=xhr.response;
+       fetch(data);
+    }
+    }
+xhr.open('GET',url);
+xhr.send();
+
+    
+  }
+  function fetch(value)
+  {
+for(let i=0;i<10;i++)
+    {
+      if(value.Search[i].Poster==='N/A')
+      {
+cardcreate("{{ url_for('static',filename='styles/naimg.jpg') }}",value.Search[i].Title);
+      }
+      else
+      {
+ cardcreate(value.Search[i].Poster,value.Search[i].Title);
+      }
+     
+    }
+  }
+   function onlick(id)
+    {
+     
+window.location.href = "http://127.0.0.1:5000/detail/"+id;
+    }
+    function homepage(){
+  window.location.href = "http://127.0.0.1:5000/";
+}
+     function search()
+    {
+     let name=document.getElementById('search').value;
+      if(name.length==0)
+      {
+        alert("Please Enter Title");
+      }
+ else
+    window.location.href = "http://127.0.0.1:5000/search/"+name;
+    };
+  </script>
+</head>
+
+<body onload="fly()" style="background-color: #f5f5f5">
+  <header class="header " display="inline-block;">
+    <img height="50px" src="{{ url_for('static',filename='styles/logo.png') }}" onclick="homepage()"/>
+      </header>
+
+
+
+  <div align="center" style=" margin-top:3%">  
+   
+
+  <div class="scontainer" style="margin-top:0.1px ;margin-right:5%" >
+  <input    type="text" id="search" onsearch="search()" placeholder="CLICK ON ICON to Search..." >
+  <button  onclick="search()" class="search"></button>
+
+</div>
+  
+
+</div>
+
+<div class="floatmain" id="mydiv"style="margin-left: 3% ; margin-top: 3%">
+</div>
+<div align="center">
+  <button  class="showbutton"  style =" box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); width:150px;height: 50px; margin-top: 30px; margin-bottom: 50px;"onclick="fly()" >SHOW MORE</button>
+
+
+</div>
+</body>
+</html>  
+            
+  

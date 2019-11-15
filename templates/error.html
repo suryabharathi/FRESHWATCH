@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>404: Players Not Found</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/search.css') }}">
+<script type="text/javascript">
+function homepage(){
+	window.location.href = "http://127.0.0.1:5000/";
+}
+</script>
+</head>
+<body>
+<header class="header " display="inline-block;"  >
+    <img height="50px" src="{{ url_for('static',filename='styles/logo.png') }}" onclick="homepage()">
+      </header>
+
+<div class="site">
+	<div class="sketch">
+		<div class="bee-sketch red"></div>
+		<div class="bee-sketch blue"></div>
+	</div>
+
+<h1>404:
+	<small>Page Not Found</small></h1>
+</div>
+
+  
+</body>
+</html>
