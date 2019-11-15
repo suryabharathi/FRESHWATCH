@@ -27,4 +27,4 @@ That's all folks you can enyoy using FRESHWATCH NOW
    #### CLICK ON FRESHWATCH LOGO TO REDIRECT TO HOMEPAGE FROM ANY PAGE.
 
    
-   ## ENJOY USING FRESHWATCH, HAVE FUN :heart:
+   ## ENJOY USING FRESHWATCH, HAVE FUN :heart: . ALso don't forget to suggest me good shows :wink: .
