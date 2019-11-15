@@ -6,12 +6,14 @@ FRESHWATCH is a web app giving information of largest collection of movie, TV sh
 
 # How to use?
 ## Requirements :
-1. Python
+1. Python 3
 2. FLASK
 
 ## TO ACCESS FRESHWATCH, Follow the following steps:
 1. Download FRESWATCH
 2. Run the __init__ file using Flask.
+   {
+  
 3. Use url http://127.0.0.1:5000/ to use FRESHWATCH
 That's all folks you can enyoy using FRESHWATCH NOW
 
