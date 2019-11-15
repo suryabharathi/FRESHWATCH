@@ -21,7 +21,14 @@ window.location.href = "http://127.0.0.1:5000/detail/"+id;
       }
       else
     window.location.href = "http://127.0.0.1:5000/search/"+name;
-    };
+    }
+
+    function handleEnter(e){
+    var keycode = (e.keyCode ? e.keyCode : e.which);
+    if (keycode == '13') {
+      search();
+    }
+};;
   
   </script>
 </head>
@@ -36,7 +43,7 @@ window.location.href = "http://127.0.0.1:5000/detail/"+id;
   <div align="center" style=" margin-top:3%">  
    
   <div class="scontainer" style="margin-top:0.1px ;margin-right:5%" >
-  <input    type="text" id="search"    placeholder="CLICK ON ICON to Search..." >
+  <input    type="text" id="search" onkeypress="handleEnter(event)"   placeholder="Search..." >
   <button onclick="search()" id="searchbutton" class="search"></button>
 
 </div>  
