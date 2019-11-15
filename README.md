@@ -1,4 +1,4 @@
-# FRESHWATCH
+# FRESHWATCH :clapper:
 
 FRESHWATCH is a web app giving information of largest collection of movie, TV shows and web series. We aim to list every detail about every movie,TV show and and web series ever made, including who was in it, who made it, the plot, imdb ratings, poster and much more.
 
