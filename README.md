@@ -1,6 +1,6 @@
 # FRESHWATCH :clapper:
 
-FRESHWATCH is a web app giving information of largest collection of movie, TV shows and web series. We aim to list every detail about every movie,TV show and and web series ever made, including who was in it, who made it, the plot, imdb ratings, poster and much more.
+FRESHWATCH is a web app giving information of largest collection of movie, TV shows and web series. We aim to list every detail about every movie,TV show and and web series ever made, including who was in it, who made it, the plot, imdb ratings, poster and much more. It looks simple and is way too easy to use.
 
 #### FRESHWATCH is accessible by all and doesn't require any registration process. 
 
@@ -27,4 +27,4 @@ That's all folks you can enyoy using FRESHWATCH NOW
    #### CLICK ON FRESHWATCH LOGO TO REDIRECT TO HOMEPAGE FROM ANY PAGE.
 
    
-   ## ENJOY USING FRESHWATCH, HAVE FUN :heart: . ALso don't forget to suggest us good shows :wink: .
+   ## ENJOY USING FRESHWATCH, HAVE FUN :heart: . ALso don't forget to suggest me good shows :wink: .
