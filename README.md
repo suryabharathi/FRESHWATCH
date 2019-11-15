@@ -35,7 +35,14 @@ That's all folks you can enjoy using FRESHWATCH NOW
 ## TO USE FRESHWATCH, Follow the following steps:
    You will be directed to Home Page once you access FRESHWATCH. This contains most Highly Rated and Most Popular content. You can get all intresting contents regarding the same by clicking on them which will redirect you to Description Page.
    
+ ![Home Page Demo](home_demo.gif)
+   
+   
+   
    #### TO SEARCH ANY MOVIE, SERIES AND MORE :
+    
+   ![How to Search Demo](search_demo.gif)
+
    1. By Cicking on the search button placed in the Home Page you will get access to Input Field .
    2. Enter the Name of the content you want to Search.
    3. On submitting the name you will be redirected to Search Page with all related contents to yours search input. To get more intresting           content click on Show More.
