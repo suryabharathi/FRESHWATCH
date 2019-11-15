@@ -39,7 +39,7 @@ That's all folks you can enjoy using FRESHWATCH NOW
    
    
    
-   #### TO SEARCH ANY MOVIE, SERIES AND MORE :
+   ### TO SEARCH ANY MOVIE, SERIES AND MORE :
     
    ![How to Search Demo](search_demo.gif)
 
